@@ -30,7 +30,7 @@ Complexe moins(Complexe z1,Complexe z2);
 double module(Complexe z);
 double argument(Complexe z);
 *******************************************
-************main**************
+************main.c**************
 
 #include <stdlib.h>
 #include <stdio.h>
