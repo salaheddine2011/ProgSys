@@ -1,5 +1,5 @@
 
-****************complexe.o****************
+****************complexe.c****************
 #include <math.h>
 #include "complexe.h"
 Complexe nouveauComplexe(double r,double i)
