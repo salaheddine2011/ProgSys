@@ -53,16 +53,16 @@ usecomplexe.o: main.c complex.h
 complexe.o : complexe.c complexe.h
 	gcc -Wall -c complexe.c
 ****************************************
-OBJETS=inversion.o tabio.o
+OBJETS=main.o complexe.o
 CC=gcc
 CFLAGS=-Wall -g
 inversion : $(OBJETS)
       $(CC) $(CFLAGS) $(OBJETS)\
-      -o inversion
-inversion.o : inversion.c tabio.h
-      $(CC) $(CFLAGS) -c iversion.c
-tabio.o : tabio.c tabio.h
-      $(CC) $(CFLAGS) -c tabio.c
+      -o main
+main.o : complexe.c complexe.h
+      $(CC) $(CFLAGS) -c complexe.c
+complexe.o : complexe.o complexe.h
+      $(CC) $(CFLAGS) -c complexe.c
 ******************************************
 all:$(APPLI) clean
 $(APPLI) :$(APPLI).o tabio.o
